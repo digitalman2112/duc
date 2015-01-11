@@ -21,6 +21,7 @@ struct cmd cmd_xml;
 struct cmd cmd_cgi;
 
 
+
 struct cmd *cmd_list[] = {
 	&cmd_help,
 	&cmd_info,
@@ -29,7 +30,8 @@ struct cmd *cmd_list[] = {
 	&cmd_ls,
 	&cmd_graph,
 	&cmd_xml,
-	&cmd_cgi,
+	&cmd_cgi
+
 };
 
 #define SUBCOMMAND_COUNT (sizeof(cmd_list) / sizeof(cmd_list[0]))
