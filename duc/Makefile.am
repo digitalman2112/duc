@@ -2,7 +2,7 @@ CFLAGS := -Wall -Werror
 AM_CFLAGS := @TC_CFLAGS@ @CAIRO_CFLAGS@ @PANGO_CFLAGS@ @PANGOCAIRO_CFLAGS@ -I../lib
 
 bin_PROGRAMS := duc duc.debug
-duc_SOURCES  := graph.c index.c ls.c main.c info.c cgi.c xml.c gui.c
+duc_SOURCES  := graph.c index.c ls.c main.c info.c cgi.c xml.c gui.c dup.c
 duc_SOURCES  += cmd.h
 duc_LDADD    := ../lib/libduc.la ../lib/libduc-graph.la @TC_LIBS@ @CAIRO_LIBS@ @PANGO_LIBS@ @PANGOCAIRO_LIBS@
 
